@@ -1,0 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CubeHandler : MonoBehaviour
+{
+    //adding speed variable
+    private float speed;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //declaring te speed
+        speed = 0.5f;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //declaring the speed at which we want the cube to move
+        transform.Rotate(Vector3.up * speed);
+    }
+}
